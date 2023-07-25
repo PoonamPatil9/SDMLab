@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LargestNumberSum {
+public class GreatestSumOfTwo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,10 +12,23 @@ public class LargestNumberSum {
 
         System.out.println("Enter the third number: ");
         int num3 = scanner.nextInt();
+	int largestSum;
+       int sum1=num1+num2;
+	int sum2=num2+num3;
+	int sum3=num3+num1;
+	if(sum1>sum2){
+	largestSum=sum1;
+	}else{
+	largestSum=sum2;
+	}
+	if(largestSum<sum3){
+		largestSum=sum3;
+	}
 
-        int sum= num1+num2+num3;
-	double avg=(sum/3);
-
-        System.out.println("The Average is: " + avg);
+        System.out.println("The LargestSum is: " + largestSum);
     }
 }
+
+
+
+

@@ -13,19 +13,9 @@ public class LargestNumberSum {
         System.out.println("Enter the third number: ");
         int num3 = scanner.nextInt();
 
-        int largest = num1;
+        int sum= num1+num2+num3;
+	double avg=(sum/3);
 
-        if (num2 > largest) {
-            largest = num2;
-        }
-
-        if (num3 > largest) {
-            largest = num3;
-        }
-
-        int sum = largest;
-
-        System.out.println("The largest number is: " + largest);
-        System.out.println("The sum of the largest number: " + sum);
+        System.out.println("The Average is: " + avg);
     }
 }
